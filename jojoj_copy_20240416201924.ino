@@ -20,7 +20,7 @@ Servo lockServo;
 const int unlockAngle = 90; 
 const int lockAngle = 0;    
 
-char keycode[3];
+char keycode[3];  // edit this to the length of ur password -1 
 int digit = 0;
 int isLocked = 0;
 const uint8_t RESET = 11;
