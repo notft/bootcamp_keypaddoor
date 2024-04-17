@@ -27,7 +27,7 @@ const uint8_t RESET = 11;
 
 void setup() {
   Serial.begin(9600);
-  lockServo.attach(10); // Connect servo to pin 10
+  lockServo.attach(10); 
 }
 
 void loop() {
@@ -35,7 +35,7 @@ void loop() {
   if(key){
     keycode[digit] = key;
     Serial.println(digit);
-    if(strcmp(keycode, "1234") == 0){
+    if(strcmp(keycode, "0987") == 0){   //edit this code to enter the password u want, dont try, our password isnt 0987 :) 
       if(isLocked){
         unlockDoor();
         isLocked = 0;
